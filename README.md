@@ -166,10 +166,10 @@ ImplementDelegateProtocol
 
 
 
-
+![Screen Shot 2019-06-02 at 11 41 27 PM](https://user-images.githubusercontent.com/24994818/58777721-e0815a00-858c-11e9-9a75-0d1ebe6831ae.png)
 
 ![Screen Shot 2019-06-02 at 11 41 31 PM](https://user-images.githubusercontent.com/24994818/58777719-dcedd300-858c-11e9-9fcf-275c5cbb20fe.png)
-![Screen Shot 2019-06-02 at 11 41 27 PM](https://user-images.githubusercontent.com/24994818/58777721-e0815a00-858c-11e9-9a75-0d1ebe6831ae.png)
+
 
 
 
