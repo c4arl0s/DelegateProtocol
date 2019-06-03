@@ -153,4 +153,23 @@ ImplementDelegateProtocol
 @end
 ```
 
+``` console
+2019-06-03 00:21:41.057866-0600 ImplementDelegateProtocol[98306:21144300] libMobileGestalt MobileGestalt.c:890: MGIsDeviceOneOfType is not supported on this platform.
+2019-06-03 00:22:10.869995-0600 ImplementDelegateProtocol[98306:21144300] the button on nextViewController was tapped: 1 times
+2019-06-03 00:22:11.995787-0600 ImplementDelegateProtocol[98306:21144300] the button on nextViewController was tapped: 2 times
+2019-06-03 00:22:12.291603-0600 ImplementDelegateProtocol[98306:21144300] the button on nextViewController was tapped: 3 times
+2019-06-03 00:22:12.533584-0600 ImplementDelegateProtocol[98306:21144300] the button on nextViewController was tapped: 4 times
+2019-06-03 00:22:12.766085-0600 ImplementDelegateProtocol[98306:21144300] the button on nextViewController was tapped: 5 times
+2019-06-03 00:22:13.004204-0600 ImplementDelegateProtocol[98306:21144300] the button on nextViewController was tapped: 6 times
+
+```
+
+
+
+
+
+![Screen Shot 2019-06-02 at 11 41 31 PM](https://user-images.githubusercontent.com/24994818/58777719-dcedd300-858c-11e9-9fcf-275c5cbb20fe.png)
+![Screen Shot 2019-06-02 at 11 41 27 PM](https://user-images.githubusercontent.com/24994818/58777721-e0815a00-858c-11e9-9a75-0d1ebe6831ae.png)
+
+
 
