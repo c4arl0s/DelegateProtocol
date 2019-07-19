@@ -11,7 +11,7 @@ The key to understand delegates is to kwno that a delegate is a separate object 
 Thus you can create an application delegate object that can affect the behavior of the iOS NSApplication object without subclassing or changing the NSApplication class. 
 The object you create is the delegate object, and the messages that NSApplication will send your object are called delegate methods.
 
-# InitalViewController
+# InitalViewController.m
 
 ``` objective-c
 //
@@ -57,8 +57,40 @@ The object you create is the delegate object, and the messages that NSApplicatio
 }
 
 @end
-
 ```
+
+# NextViewController.h
+
+``` objective-c
+//
+//  NextViewController.h
+//  ImplementDelegateProtocol
+//
+//  Created by Carlos Santiago Cruz on 6/1/19.
+//  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol NextViewControllerDelegate;
+
+@interface NextViewController : UIViewController
+
+@property (nonatomic, weak) id<NextViewControllerDelegate> delegate;
+
+@end
+
+@protocol NextViewControllerDelegate <NSObject>
+@optional
+- (void)buttonDidTapped:(NSInteger)times;
+- (void)buttonDidChangeColor;
+@end
+
+NS_ASSUME_NONNULL_END
+```
+
 
 # NextViewController
 
