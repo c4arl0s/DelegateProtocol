@@ -5,6 +5,12 @@ ImplementDelegateProtocol
 - The class that defines the protocol can be thought of as *delegating the work defined by the methods in the protocol to the class that implements them.
 - In that way, the class can be defined to be more general, with specific actions taken by the delegate class in response to certain events or to define specific parameters.
 
+# Understanding 
+
+The key to understand delegates is to kwno that a delegate is a separate object consulted in order to augment the behavior of a host object.
+Thus you can create an application delegate object that can affect the behavior of the iOS NSApplication object without subclassing or changing the NSApplication class. 
+The object you create is the delegate object, and the messages that NSApplication will send your object are called delegate methods.
+
 # InitalViewController
 
 ``` objective-c
