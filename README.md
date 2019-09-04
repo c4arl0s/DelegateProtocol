@@ -11,6 +11,17 @@ The key to understand delegates is to kwno that a delegate is a separate object 
 Thus you can create an application delegate object that can affect the behavior of the iOS NSApplication object without subclassing or changing the NSApplication class. 
 The object you create is the delegate object, and the messages that NSApplication will send your object are called delegate methods.
 
+# Steps to Delegation
+
+1. Create a delegate protocol
+2. Create a delegate property
+3. Adopt and implement the protocol.
+4. Call the delegate.
+
+### Swift allows to be used protocols in classes, structs and enums.
+### Objective-C only can be used in classes.
+
+
 # InitalViewController.m
 
 ``` objective-c
