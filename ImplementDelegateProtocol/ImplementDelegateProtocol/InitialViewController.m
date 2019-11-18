@@ -11,25 +11,30 @@
 
 @interface InitialViewController () <NextViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *acceptButton;
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @end
 
 @implementation InitialViewController
 {
     NextViewController *nextViewController;
 }
-- (instancetype)init
+
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];
-    if (self) {
-        
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self)
+    {
+        return self;
     }
-    return self;
+    return nil;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.blueColor;
+    self.infoLabel.text = @"wait for the tap on the second view";
 }
+
 - (IBAction)acceptButtonTapped:(id)sender
 {   // method always displays the view controller modally.
     // The view controller that calls this method might not ultimately handle the presentation but the presentation is always modal.
@@ -42,7 +47,8 @@
 }
 - (void)buttonDidTapped:(NSInteger)times
 {
-    NSLog(@"the button on nextViewController was tapped: %ld times", (long)times);
+    NSString *infoString = [NSString stringWithFormat:@"the button on nextViewController was tapped: %ld times", (long)times];
+    _infoLabel.text = infoString;
 }
 
 @end

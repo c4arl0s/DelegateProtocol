@@ -10,18 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol NextViewControllerDelegate;
-
-@interface NextViewController : UIViewController
-
-@property (nonatomic, weak) id<NextViewControllerDelegate> delegate;
-
-@end
-
 @protocol NextViewControllerDelegate <NSObject>
 @optional
 - (void)buttonDidTapped:(NSInteger)times;
 - (void)buttonDidChangeColor;
+@end
+
+@interface NextViewController : UIViewController
+@property (nonatomic, weak) id<NextViewControllerDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -21,12 +21,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
 }
+
 - (IBAction)backButtonTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (IBAction)buttonTapped:(id)sender {
     counter = counter+1;
-    [self.delegate buttonDidTapped:counter];
+    if ([self.delegate respondsToSelector:@selector(buttonDidTapped:)])
+    {
+        [self.delegate buttonDidTapped:counter];
+    }
 }
 
 @end
