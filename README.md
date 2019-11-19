@@ -7,9 +7,14 @@ ImplementDelegateProtocol
 
 # Understanding 
 
-The key to understand delegates is to kwno that a delegate is a separate object consulted in order to augment the behavior of a host object.
+The key to understand delegates is to know that a delegate is a separate object consulted in order to augment the behavior of a host object.
 Thus you can create an application delegate object that can affect the behavior of the iOS NSApplication object without subclassing or changing the NSApplication class. 
 The object you create is the delegate object, and the messages that NSApplication will send your object are called delegate methods.
+
+# What is a delegate object ?
+
+A delegate is a pointer to an object with a set of methods the delegate-holder knows how to call. 
+In other words, it's a mechanism to enable specific callbacks from a later-created object.
 
 # Steps to Delegation
 
